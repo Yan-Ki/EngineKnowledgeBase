@@ -9,7 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\mainwindow.ico" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="Resources\**" />
+    <Page Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Views\mainwindow.ico" />
   </ItemGroup>
 
@@ -25,9 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\mainwindow.ico">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Resource>
     <Resource Include="Views\mainwindow.ico">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
